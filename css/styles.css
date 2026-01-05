@@ -301,6 +301,31 @@ h3 {
     margin: 0.5em 0 0;  
 }
 
+.back-to-gallery {
+    margin: 2em auto;
+    text-align: center;
+}
+
+.back-to-gallery.bottom {
+    margin-top: 3em;
+}
+
+/* Style back to gallery link as a button */
+.back-to-gallery a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: darkmagenta;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-to-gallery a:hover {
+    background-color: darkred;
+}
+
 /* Media query for screens smaller than 1000px */
 @media screen and (max-width: 1100px) {
     h1 {
