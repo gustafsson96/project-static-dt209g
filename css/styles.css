@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff; 
+    background-color: #fff;
     color: #333;
 }
 
@@ -11,8 +11,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #fff; 
-    border-bottom: 1px solid #ddd; 
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 .logotyp {
@@ -26,7 +26,7 @@ header {
 
 .logotyp img {
     width: 60px;
-    height: auto; 
+    height: auto;
     margin: 0;
     padding: 0;
     display: block;
@@ -135,9 +135,9 @@ h3 {
     height: auto;
 }
 
-    .news-container article:last-child {
-        border-bottom: none;
-    }
+.news-container article:last-child {
+    border-bottom: none;
+}
 
 /* Styling for sidebar */
 .sidebar {
@@ -211,13 +211,6 @@ h3 {
     line-height: 1.5;
 }
 
-/* .gallery-card:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    color: #333;
-    opacity: 80%;
-} */
-
 .gallery-card:hover {
     color: #333;
     opacity: 80%;
@@ -249,8 +242,67 @@ h3 {
     text-align: center;
 }
 
+/* artwork-example-x.html */
+
+.single-art-page {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 3em;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.art-first-row {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.single-art-page img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.art-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 40%;
+}
+
+.single-art-page h1 {
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+}
+
+.single-art-size {
+    font-size: 1em;     
+    font-style: italic;      
+    color: #666;           
+    text-align: center;      
+    margin: 0.3em 0;         
+}
+
+.art-second-row {
+    text-align: left;
+    margin-left: 6em;
+}
+
+.single-art-description {
+    font-size: 1.1em;          
+    line-height: 1.6;         
+    color: #333;           
+    margin: 0.5em 0 0;  
+}
+
 /* Media query for screens smaller than 1000px */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     h1 {
         margin-bottom: 0.3em;
     }
@@ -272,6 +324,24 @@ h3 {
     .sidebar h2 {
         margin-bottom: 0.8em;
     }
+
+    .single-art-page {
+        gap: 0;
+        padding: 1em;
+    }
+
+    .single-art-page img {
+        margin-top: 2em;
+    }
+    
+    .art-first-row {
+        gap: 0;
+        margin-bottom: 0;
+    }
+    
+    .art-overview {
+        max-width: 70%;
+    }
 }
 
 
@@ -280,8 +350,8 @@ h3 {
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: #fff; /* vit mobilmeny */
-        box-shadow: -2px 0 5px rgba(0,0,0,0.1); /* liten skugga på kanten */
+        background-color: #fff;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     }
 
     .hamburger {
@@ -310,6 +380,15 @@ h3 {
 
     nav.active ul li a:hover {
         color: #0077cc;
+    }
+
+    .art-overview {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .art-second-row {
+        margin-left: 2em;
     }
 }
 
