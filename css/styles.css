@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff; /* vit bakgrund för hela sidan */
-    color: #333; /* standard textfärg */
+    background-color: #fff; 
+    color: #333;
 }
 
 /* Header */
@@ -11,19 +11,25 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #fff; /* vit header */
-    border-bottom: 1px solid #ddd; /* diskret kant under header */
+    background-color: #fff; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .logotyp {
     margin: 0;
+    padding: 0;
 }
 
 .logotyp a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.2rem;
+}
+
+.logotyp img {
+    width: 60px;
+    height: auto; 
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
 /* Hamburgerikon */
@@ -39,7 +45,7 @@ header {
     width: 25px;
     height: 3px;
     transition: all 0.3s;
-    background-color: #333; /* mörka bars mot vit bakgrund */
+    background-color: #333;
 }
 
 /* Huvudmeny desktop */
@@ -60,12 +66,12 @@ nav ul li a {
     font-weight: bold;
     display: block;
     padding: 10px 0;
-    color: #333; /* text mot vit bakgrund */
+    color: #333;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #0077cc; /* hoverfärg som syns på vitt */
+    color: #0077cc;
 }
 
 /* Overlay */
@@ -78,7 +84,143 @@ nav ul li a:hover {
     z-index: 900;
 }
 
-/* Sidemenu på mobil */
+/* General styling */
+
+main {
+    max-width: 1400px;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+/* index.html */
+
+.sp-main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling for news articles */
+.news-container {
+    max-width: 60ch;
+    margin: 0 auto 2em;
+}
+
+.news-container article {
+    margin-bottom: 4em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid lightgrey;
+}
+
+.news-container img {
+    width: 100%;
+    height: auto;
+}
+
+    .news-container article:last-child {
+        border-bottom: none;
+    }
+
+/* Styling for sidebar */
+.sidebar {
+    width: 300px;
+    margin-left: 2em;
+    flex-shrink: 0;
+    border-left: 1px solid lightgrey;
+    padding: 1em 3em;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.sidebar article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    padding: 1em;
+}
+
+.sidebar article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+}
+
+.sidebar article h3 {
+    margin: 0.3em 0 0.2em 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+.sidebar article p {
+    margin: 0.2em 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Media query for screens smaller than 1000px */
+@media screen and (max-width: 1000px) {
+    h1 {
+        margin-bottom: 0.3em;
+    }
+
+    .sp-main {
+        flex-direction: column;
+    }
+
+    .news-container article:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0.8em;
+    }
+
+    .sidebar {
+        margin: 0 auto 2em;
+        border-left: none;
+    }
+
+    .sidebar h2 {
+        margin-bottom: 0.8em;
+    }
+}
+
+
+/* Media query for screens smaller than 769px */
 @media screen and (max-width: 768px) {
     nav ul {
         display: none;
@@ -108,10 +250,18 @@ nav ul li a:hover {
     }
 
     nav.active ul li a {
-        color: #333; /* mörk text mot vit bakgrund */
+        color: #333;
     }
 
     nav.active ul li a:hover {
         color: #0077cc;
+    }
+}
+
+
+/* Media query for screens smaller than 500px */
+@media screen and (max-width: 500px) {
+    .sidebar {
+        width: auto;
     }
 }
