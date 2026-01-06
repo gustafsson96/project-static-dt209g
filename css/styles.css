@@ -391,6 +391,22 @@ h3 {
     background-color: darkred;
 }
 
+.about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+}
+
+.about-content img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 /* Media query for screens smaller than 1000px */
 @media screen and (max-width: 1100px) {
     h1 {
