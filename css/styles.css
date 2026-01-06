@@ -326,6 +326,49 @@ h3 {
     background-color: darkred;
 }
 
+/* article-example */
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.article-container img {
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.article-date {
+    font-size: 1em;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+}
+
+.article-text {
+    max-width: 60%;
+    line-height: 1.4;
+    margin: 0 auto;
+}
+
+.back-to-start a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: darkmagenta;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-to-start a:hover {
+    background-color: darkred;
+}
+
 /* Media query for screens smaller than 1000px */
 @media screen and (max-width: 1100px) {
     h1 {
