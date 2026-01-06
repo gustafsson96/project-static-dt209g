@@ -593,6 +593,11 @@ h3 {
         margin-left: 2em;
     }
 
+    .article-container h1 {
+        font-size: 2em;
+        margin: 1em 0.2em 0.5em;
+    }
+
     .article-container img {
         max-width: 80%;
     }
