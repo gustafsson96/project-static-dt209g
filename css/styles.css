@@ -410,6 +410,14 @@ h3 {
     .art-overview {
         max-width: 70%;
     }
+
+    .article-container img {
+        max-width: 65%;
+    }
+    
+    .article-text {
+        max-width: 65%;
+    }
 }
 
 
@@ -458,6 +466,14 @@ h3 {
     .art-second-row {
         margin-left: 2em;
     }
+
+    .article-container img {
+        max-width: 80%;
+    }
+    
+    .article-text {
+        max-width: 80%;
+    }
 }
 
 
@@ -465,5 +481,13 @@ h3 {
 @media screen and (max-width: 500px) {
     .sidebar {
         width: auto;
+    }
+
+    .article-container img {
+        max-width: 90%;
+    }
+    
+    .article-text {
+        max-width: 90%;
     }
 }
