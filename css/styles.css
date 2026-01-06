@@ -151,6 +151,11 @@ h3 {
 .sidebar a {
     text-decoration: none;
     color: black;
+    display: block;
+}
+
+.sidebar a:hover {
+    opacity: 80%;
 }
 
 .sidebar h2 {
@@ -192,6 +197,23 @@ h3 {
     margin: 0.2em 0;
     font-size: 0.9em;
     text-align: center;
+}
+
+.read-more a {
+    display: inline-block;
+    padding: 0.5em;
+    background-color: darkmagenta;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 0.8em;
+    font-size: 0.9em;
+}
+
+.read-more  a:hover {
+    background-color: darkred;
 }
 
 /* art-gallery.html */
@@ -336,7 +358,7 @@ h3 {
 }
 
 .article-container img {
-    max-width: 60%;
+    max-width: 55%;
     height: auto;
     margin: 0 auto;
 }
@@ -349,7 +371,7 @@ h3 {
 }
 
 .article-text {
-    max-width: 60%;
+    max-width: 55%;
     line-height: 1.4;
     margin: 0 auto;
 }
