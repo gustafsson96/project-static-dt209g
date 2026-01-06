@@ -420,6 +420,7 @@ h3 {
 
     .sp-main {
         flex-direction: column;
+        margin: 1em;
     }
 
     .news-container article:last-child {
