@@ -212,11 +212,58 @@ h3 {
     font-size: 0.9em;
 }
 
-.read-more  a:hover {
+.read-more a:hover {
     background-color: darkred;
 }
 
-/* art-gallery.html */
+/* gallery-overview.html */
+.gallery-overview-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3em;
+    padding: 1em;
+    margin: 0 5em;
+}
+
+.gallery-overview-card {
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.gallery-overview-card:hover {
+    color: #333;
+    opacity: 80%;
+}
+
+.gallery-overview-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-overview-card h2 {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* art-gallery-example.html */
 .gallery-section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -304,11 +351,11 @@ h3 {
 }
 
 .single-art-size {
-    font-size: 1em;     
-    font-style: italic;      
-    color: #666;           
-    text-align: center;      
-    margin: 0.3em 0;         
+    font-size: 1em;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin: 0.3em 0;
 }
 
 .art-second-row {
@@ -317,10 +364,10 @@ h3 {
 }
 
 .single-art-description {
-    font-size: 1.1em;          
-    line-height: 1.6;         
-    color: #333;           
-    margin: 0.5em 0 0;  
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    margin: 0.5em 0 0;
 }
 
 .back-to-gallery {
@@ -447,7 +494,7 @@ h3 {
         gap: 0;
         padding: 1em;
     }
-    
+
     .single-art-page h1 {
         margin: 0.5em 0;
         font-size: 1.3rem;
@@ -457,12 +504,12 @@ h3 {
         margin-top: 0;
         max-width: 50%;
     }
-    
+
     .art-first-row {
         gap: 0;
         margin-bottom: 0;
     }
-    
+
     .art-overview {
         max-width: 70%;
     }
@@ -470,7 +517,7 @@ h3 {
     .article-container img {
         max-width: 65%;
     }
-    
+
     .article-text {
         max-width: 65%;
     }
@@ -485,7 +532,7 @@ h3 {
         width: 70%;
         margin-top: 1em;
     }
-    
+
 }
 
 
@@ -526,6 +573,12 @@ h3 {
         color: #0077cc;
     }
 
+    /* gallery-overview.html */
+    .gallery-overview-section {
+        gap: 2em;
+        margin: 0 2em;
+    }
+
     .single-art-page img {
         margin-top: 0;
         max-width: 75%;
@@ -543,7 +596,7 @@ h3 {
     .article-container img {
         max-width: 80%;
     }
-    
+
     .article-text {
         max-width: 80%;
     }
@@ -582,7 +635,7 @@ h3 {
     .article-container img {
         max-width: 90%;
     }
-    
+
     .article-text {
         max-width: 90%;
     }

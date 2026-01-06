@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Galleri</title>
+</head>
+
+<body>
+    <header>
+        <div class="logotyp">
+            <a href="index.html"><img src="images/logotyp.png"></a>
+        </div>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="gallery-overview.html">Konst</a></li>
+                <li><a href="about.html">Om</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    
+    <!-- Overlay -->
+    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
+      <h1>Konst</h1>
+      <main>
+        <section class="gallery-overview-section">
+            <a class="gallery-overview-card" href="art-gallery-example.html">
+                <img src="images/4:12.jpeg" alt="">
+                <h2>Textil</h2>
+            </a>
+            <a class="gallery-overview-card" href="#">
+                <img src="images/skulptur.jpeg" alt="">
+                <h2>Skulptur</h2>
+            </a>
+            <a class="gallery-overview-card" href="#">
+                <img src="images/annat.jpeg" alt="">
+                <h2>Andra konstnärliga projekt</h2>
+            </a>
+        </section>
+      </main>
+      <script src="script.js"></script>
+</body>
+
+</html>
