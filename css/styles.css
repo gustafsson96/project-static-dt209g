@@ -33,7 +33,7 @@ header {
 }
 
 .logotyp img {
-    width: 60px;
+    width: 100px;
     height: auto;
     margin: 0;
     padding: 0;
@@ -213,7 +213,7 @@ h3 {
 .read-more a {
     display: inline-block;
     padding: 0.5em;
-    background-color: var(--color-accent-blue);
+    background-color: var(--color-primary);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -394,7 +394,7 @@ h3 {
 .back-to-gallery a {
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: var(--color-accent-blue);
+    background-color: var(--color-primary);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -437,7 +437,7 @@ h3 {
 .back-to-start a {
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: var(--color-accent-blue);
+    background-color: var(--color-primary);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
