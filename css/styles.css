@@ -1,8 +1,17 @@
+/* Color scheme */
+:root {
+    --color-bg: #FFC1D9;
+    --color-primary: #29472D;
+    --color-accent-orange: #FF8921;
+    --color-accent-blue: #003D9A;
+    --font-main: 'Poppins', Arial, sans-serif;
+    --font-menu-items: 'Archivo Black', sans-serif, Helvetica; 
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
+    background-color: var(--color-bg);
 }
 
 /* Header */
@@ -11,8 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: var(--color-accent-orange);
 }
 
 .logotyp {
@@ -45,7 +53,7 @@ header {
     width: 25px;
     height: 3px;
     transition: all 0.3s;
-    background-color: #333;
+    background-color: #000;
 }
 
 /* Huvudmeny desktop */
@@ -62,16 +70,19 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: var(--font-menu-items);
     text-decoration: none;
+    font-size: 1.1em;
     font-weight: bold;
     display: block;
     padding: 10px 0;
-    color: #333;
+    color: #000;
     transition: color 0.3s;
+    margin: 0 0.8em;
 }
 
 nav ul li a:hover {
-    color: #0077cc;
+    color: #B03060;
 }
 
 /* Overlay */
@@ -127,7 +138,7 @@ h3 {
 .news-container article {
     margin-bottom: 4em;
     padding-bottom: 1em;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid #FF8BB5;
 }
 
 .news-container img {
@@ -144,7 +155,7 @@ h3 {
     width: 300px;
     margin-left: 2em;
     flex-shrink: 0;
-    border-left: 1px solid lightgrey;
+    border-left: 1px solid #FF8BB5;
     padding: 1em 3em;
 }
 
@@ -202,7 +213,7 @@ h3 {
 .read-more a {
     display: inline-block;
     padding: 0.5em;
-    background-color: darkmagenta;
+    background-color: var(--color-accent-blue);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -213,7 +224,7 @@ h3 {
 }
 
 .read-more a:hover {
-    background-color: darkred;
+    background-color: var(--color-accent-orange);
 }
 
 /* gallery-overview.html */
@@ -234,7 +245,7 @@ h3 {
 }
 
 .gallery-overview-card:hover {
-    color: #333;
+    color: var(--color-bg);
     opacity: 80%;
 }
 
@@ -353,7 +364,7 @@ h3 {
 .single-art-size {
     font-size: 1em;
     font-style: italic;
-    color: #666;
+    color: var(--color-primary);
     text-align: center;
     margin: 0.3em 0;
 }
@@ -366,7 +377,7 @@ h3 {
 .single-art-description {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #333;
+    color: #000;
     margin: 0.5em 0 0;
 }
 
@@ -383,7 +394,7 @@ h3 {
 .back-to-gallery a {
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: darkmagenta;
+    background-color: var(--color-accent-blue);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -392,7 +403,7 @@ h3 {
 }
 
 .back-to-gallery a:hover {
-    background-color: darkred;
+    background-color: var(--color-accent-orange);
 }
 
 /* article-example */
@@ -413,7 +424,7 @@ h3 {
 .article-date {
     font-size: 1em;
     font-style: italic;
-    color: #666;
+    color: var(--color-primary);
     text-align: center;
 }
 
@@ -426,7 +437,7 @@ h3 {
 .back-to-start a {
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: darkmagenta;
+    background-color: var(--color-accent-blue);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -435,7 +446,7 @@ h3 {
 }
 
 .back-to-start a:hover {
-    background-color: darkred;
+    background-color: var(--color-accent-orange);
 }
 
 .about-content {
@@ -565,19 +576,19 @@ h3 {
         width: 250px;
         padding-top: 60px;
         z-index: 1000;
+        background-color: var(--color-accent-orange);
     }
 
     nav.active ul li {
-        margin: 20px 0;
-        text-align: center;
+        margin: 1em 2em;
     }
 
     nav.active ul li a {
-        color: #333;
+        color: #000;
     }
 
     nav.active ul li a:hover {
-        color: #0077cc;
+        color: #B03060;
     }
 
     /* gallery-overview.html */
