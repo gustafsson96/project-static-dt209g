@@ -5,7 +5,7 @@
     --color-accent-orange: #FF8921;
     --color-accent-blue: #003D9A;
     --font-main: 'Poppins', Arial, sans-serif;
-    --font-menu-items: 'Archivo Black', sans-serif, Helvetica; 
+    --font-menu-items: 'Archivo Black', sans-serif, Helvetica;
 }
 
 body {
@@ -515,6 +515,25 @@ h3 {
 
 .contact-section input[type="submit"]:hover {
     background-color: var(--color-accent-orange);
+}
+
+
+/* footer styling */
+footer {
+    font-family: var(--font-main);
+    font-weight: bold;
+    margin-top: 4em;
+    padding: 1.5em 1em;
+    background-color: var(--color-accent-orange);
+    color: #000;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-family: var(--font-main);
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
 }
 
 /* Media query for screens smaller than 1000px */
